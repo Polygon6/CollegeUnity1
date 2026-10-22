@@ -12,6 +12,9 @@ public class up : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.up * Time.deltaTime * speed;
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.position += Vector3.up * Time.deltaTime * speed;
+        }
     }
 }
